@@ -89,7 +89,7 @@ class OAuth2Client {
 
     final authorizeUrl = getAuthorizeUrl(
         clientId: clientId,
-        responseType: 'token',
+        responseType: 'id_token',
         scopes: scopes,
         enableState: enableState,
         state: state,
