@@ -312,7 +312,8 @@ class OAuth2Client {
       Map<String, dynamic>? customParams}) {
     final params = <String, dynamic>{
       'response_type': responseType,
-      'client_id': clientId
+      'client_id': clientId,
+        'nonce' : '1234'
     };
 
     if (redirectUri != null && redirectUri.isNotEmpty) {
